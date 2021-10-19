@@ -1,5 +1,6 @@
 <template>
   <v-app id="inspire">
+    <sidebar />
     <v-app-bar
       app
       shrink-on-scroll
@@ -36,7 +37,10 @@
 </template>
 
 <script>
-  export default {
-    //
-  }
+import Sidebar from '@/components/layouts/Sidebar'
+export default {
+  components:{
+    Sidebar
+  },
+}
 </script>
